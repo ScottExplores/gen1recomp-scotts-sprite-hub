@@ -235,7 +235,7 @@ return function(mod)
   -- through game.ready, where the sanctioned Game object is available.
   hub:enforce(nil)
 
-  mod.exports.version = "0.2.1"
+  mod.exports.version = "0.2.2"
   mod.exports.activePack = function() return hub:activePack() end
   mod.exports.packLabel = function() return hub:packLabel() end
   mod.exports.ownership = function() return hub:ownership() end

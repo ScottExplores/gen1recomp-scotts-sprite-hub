@@ -1,4 +1,4 @@
-# Scott's Sprite Menu 0.2.1
+# Scott's Sprite Menu 0.2.2
 
 Scott's Sprite Menu is a small controller mod. It adds one **SPRITES** entry
 to the Gen 1 Start menu and keeps the visible page short:
@@ -82,7 +82,7 @@ route is a separate `optional_import` that reads the user's own Pokemon Gold
 ROM at runtime and imports the authentic `PackMenuGFX` / `PackGFX`, pocket
 tiles, and palettes. No Gen 2 icons would be bundled, generated, or redrawn by
 this controller. That import and its provenance checks are roadmap only, not a
-feature of v0.2.1. Keeping the current hub compact and using a separate
+feature of v0.2.2. Keeping the current hub compact and using a separate
 Advanced page leaves room for that future Thor lower-screen interface without
 changing sprite ownership.
 
@@ -92,13 +92,19 @@ Install this mod alongside Scott's Battle Art Kanto. Install either Crystal
 Animated Sprites v2 or the FireRed alternative, not both. Gen1 Modern UI and
 Scott's Dual Screen are optional.
 
-If you already have Sprite Menu 0.2.0, install
-`scotts_sprite_hub-0.2.1.zip` manually one final time. Version 0.2.0 did not
-contain a GitHub repository address, so Gen1Recomp cannot discover this
-bootstrap update on its own. Version 0.2.1 records the public
-`ScottExplores/gen1recomp-scotts-sprite-hub` repository in its manifest;
-after 0.2.1 is installed, future GitHub releases can be found through
-Gen1Recomp's normal mod updater.
+The user-facing download is **`SCOTTS_SPRITE_MENU-0.2.2.zip`**, matching the
+name shown in the mod list. The manifest's internal ID remains
+`scotts_sprite_hub` because Gen1Recomp uses that stable ID for saved settings
+and update continuity. You may still see the internal ID in technical screens
+or installed folders; it refers to the same **Scott's Sprite Menu** mod.
+
+If you already have Sprite Menu 0.2.0, manually import
+`SCOTTS_SPRITE_MENU-0.2.2.zip` one final time. Version 0.2.0 did not contain a
+GitHub repository address, so Gen1Recomp cannot discover this bootstrap update
+on its own. If you have version 0.2.1, use Gen1Recomp's normal in-app updater;
+you do not need to move another ZIP. Version 0.2.2 keeps the public
+`ScottExplores/gen1recomp-scotts-sprite-hub` repository in its manifest, so
+future GitHub releases can be found through Gen1Recomp's normal mod updater.
 
 Battle Art is listed as an optional companion in the manifest so Gen1Recomp's
 official isolated package validator can mount and inspect this ZIP by itself.

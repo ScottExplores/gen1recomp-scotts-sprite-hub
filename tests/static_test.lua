@@ -17,7 +17,7 @@ end
 local manifest = read("manifest.json")
 assert(manifest:match('"id"%s*:%s*"scotts_sprite_hub"'), "stable id")
 assert(manifest:match('"name"%s*:%s*"Scott\'s Sprite Menu"'), "name")
-assert(manifest:match('"version"%s*:%s*"0%.2%.1"'), "version")
+assert(manifest:match('"version"%s*:%s*"0%.2%.2"'), "version")
 assert(manifest:match('"github"%s*:%s*"ScottExplores/gen1recomp%-scotts%-sprite%-hub"'),
   "public updater repository")
 assert(manifest:match('"game_version"%s*:%s*">=0%.1%.88 <2%.0%.0"'),
@@ -51,7 +51,7 @@ assert(main:find('default = true', 1, true), "flip defaults ON")
 assert(main:find('payload.mod == mod.id', 1, true)
     and main:find('payload.key == "playerFrontFlip"', 1, true),
   "hub Mod Manager changes apply live")
-assert(main:find('mod.exports.version = "0.2.1"', 1, true),
+assert(main:find('mod.exports.version = "0.2.2"', 1, true),
   "exported version")
 local startCount, offset, needle = 0, 1, 'id = "scotts_sprite_hub.open"'
 while true do
@@ -115,6 +115,9 @@ for _, marker in ipairs({ "no Pokemon art",
 end
 assert(readme:find("install", 1, true)
     and readme:find("0.2.0 did not", 1, true)
+    and readme:find("SCOTTS_SPRITE_MENU-0.2.2.zip", 1, true)
+    and readme:find("0.2.1", 1, true)
+    and readme:find("internal ID", 1, true)
     and readme:find("future GitHub releases", 1, true),
   "README documents one-time updater bootstrap")
 
