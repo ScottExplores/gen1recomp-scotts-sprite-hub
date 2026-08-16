@@ -1,7 +1,7 @@
 {
   "id": "scotts_sprite_hub",
   "name": "Scott's Sprite Menu",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "github": "ScottExplores/gen1recomp-scotts-sprite-hub",
   "api": 2,
   "entry": "main.lua",

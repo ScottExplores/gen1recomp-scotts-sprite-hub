@@ -68,7 +68,7 @@ T.eq(#(run.errors or {}), 0, "production Loader reported no errors")
 
 local hub = run.loader.exports.scotts_sprite_hub
 T.check(hub and type(hub.activePack) == "function", "hub exports loaded")
-T.eq(hub and hub.version, "0.2.1", "hub exports current version")
+T.eq(hub and hub.version, "0.2.2", "hub exports current version")
 T.check(hub and type(hub.playerFrontFlip) == "function"
     and type(hub.setPlayerFrontFlip) == "function",
   "hub exports player-front flip controls")
