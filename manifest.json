@@ -1,0 +1,27 @@
+{
+  "id": "scotts_sprite_hub",
+  "name": "Scott's Sprite Menu",
+  "version": "0.2.1",
+  "github": "ScottExplores/gen1recomp-scotts-sprite-hub",
+  "api": 2,
+  "entry": "main.lua",
+  "profile": "content",
+  "category": "UI",
+  "games": ["gen1"],
+  "game_version": ">=0.1.88 <2.0.0",
+  "priority": 1100,
+  "dependencies": [],
+  "optional_dependencies": [
+    "BATTLE_ART_VOXEL_FORK",
+    "crystal_animated_sprites_with_shiny_visuals",
+    "firered_battle_sprites",
+    "gen1_modern_ui",
+    "gen1recomp_ds"
+  ],
+  "conflicts": [],
+  "permissions": [
+    "engine_internals"
+  ],
+  "affects_link": false,
+  "description": "A compact Start-menu hub that gives Battle Art and the active external sprite pack one clear owner for Pokemon and trainer art, with a player-front flip toggle. Contains no sprite or icon assets."
+}

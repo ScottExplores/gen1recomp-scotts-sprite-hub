@@ -1,0 +1,5 @@
+tests/static_test.lua
+tests/controller_test.lua
+tests/loader_matrix_test.lua
+tests/run_tests.ps1
+.modkitignore
